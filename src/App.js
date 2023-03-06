@@ -1,17 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+//In modern react we do not need import React, 
+//however when JSX compiling in to calls React.createElement in olde react we need it
+//
 
-function App() {
-  return (
-    <div className="App">
-      <SayHello />
-      <SayHello />
-    </div>
-  );
+export default function App(){
+   return (
+    <div>
+      <h1>Hello World</h1>
+      <p>Test</p>   
+    </div>  
+    );
 }
-
-function SayHello(){
-  return <p>Hello Crazy World! Learning React</p>
-}
-
-export default App;
