@@ -6,9 +6,9 @@ import React from 'react';
 
 export default function App(){
    return (
-    <div>
+    <React.Fragment>
       <h1>Hello World</h1>
       <p>Test</p>   
-    </div>  
+    </React.Fragment>  
     );
 }
