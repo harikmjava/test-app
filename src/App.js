@@ -5,22 +5,38 @@ import "./App.css";
 
 export default function App() {
 
+  //define constant handleClick
   const handleClick = () => {
     console.log('clicked');
   };
 
+  //TODO: implement different types of events
   return (
     <button
-      onClick={() => {
-        console.log("clicked");
-      }}
-    >
-      Click Me
+      onClick={handleClick1}>
+      Click Me 
     </button>
   );
 }
 
-function handleClick() {
-  console.log("clicked1");
-};
+/**
+ * onClick={() => {
+        console.log("clicked");
+      }}
+ * 
+ */
 
+//console log clicked1
+function handleClick1() {
+  console.log("clicked1");
+}
+
+//native Event
+function handleNativeEvent(event){
+  console.log(event.nativeEvent);
+}
+
+//Synthetic event
+function handleSyntheticEvent(event){
+  console.log(event)
+}
